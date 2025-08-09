@@ -257,10 +257,11 @@ body {
 /* Lab background */
 .lab-bg {
     bottom: 0;
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: auto;
+    height: 110%;
     position: absolute; z-index: 0;
 }
 
@@ -284,12 +285,12 @@ body {
     bottom: 90px;
     left: 42%;
     width: 40px; /* scale */
-    transform: rotate(45deg);
+    transform: rotate(100deg);
     animation: bulletMove 1s linear infinite;
 }
 @keyframes bulletMove {
-    0% { transform: rotate(20deg) translate(0, 0); opacity: 1; }
-    100% { transform: rotate(20deg) translate(100px, -80px); opacity: 0; }
+    0% { transform: rotate(-10deg) translate(0, 0); opacity: 1; }
+    100% { transform: rotate(0deg) translate(100px, -80px); opacity: 0; }
 }
 
 /* Zombie trước mặt */
