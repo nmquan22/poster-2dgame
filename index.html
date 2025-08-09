@@ -1,125 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Phoenix: Genesis Outbreak - Poster</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;600;800&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Extra styles for player/enemies/bullet/camera */
-        .scene {
-            position: absolute;
-            top: 220px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 400px;
-            height: 300px;
-            z-index: 5;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agent Phoenix: Genesis Outbreak</title>
 
-        .player {
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 50px;
-            animation: playerIdle 1.5s ease-in-out infinite alternate;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;600;800&display=swap" rel="stylesheet">
 
-        @keyframes playerIdle {
-            0% { transform: translateX(-50%) translateY(0px); }
-            100% { transform: translateX(-50%) translateY(-5px); }
-        }
-
-        .bullet {
-            position: absolute;
-            bottom: 140px;
-            left: 55%;
-            font-size: 20px;
-            animation: bulletMove 1s linear infinite;
-        }
-
-        @keyframes bulletMove {
-            0% { transform: translateX(0px); opacity: 1; }
-            100% { transform: translateX(200px); opacity: 0; }
-        }
-
-        .enemy {
-            position: absolute;
-            bottom: 100px;
-            font-size: 45px;
-            animation: enemyMove 3s linear infinite;
-        }
-
-        .enemy.left {
-            left: -60px;
-            animation-delay: 0s;
-        }
-
-        .enemy.right {
-            right: -60px;
-            animation-delay: 1.5s;
-        }
-
-        @keyframes enemyMove {
-            0% { transform: translateX(0); opacity: 0.5; }
-            50% { opacity: 1; }
-            100% { transform: translateX(80px); opacity: 0.5; }
-        }
-
-        .camera {
-            position: absolute;
-            bottom: 180px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 35px;
-            opacity: 0.8;
-            animation: cameraFloat 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes cameraFloat {
-            0% { transform: translateX(-50%) translateY(0px); }
-            100% { transform: translateX(-50%) translateY(-6px); }
-        }
-    </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="poster">
-        <div class="background-effect"></div>
-        <div class="glitch-overlay"></div>
-        <div class="biohazard">☢️</div>
+  <div class="poster">
+    <div class="background-effect"></div>
+    <div class="particles"></div>
+    <div class="glitch-overlay"></div>
+    <div class="biohazard">☢️</div>
 
-        <div class="title">
-            <h1>AGENT PHOENIX</h1>
-            <div class="subtitle">Genesis Outbreak</div>
-        </div>
-
-        <!-- Scene with player, bullet, enemies, camera -->
-        <div class="scene">
-            <div class="camera">📷</div>
-            <div class="player">🧍‍♂️</div>
-            <div class="bullet">💥</div>
-            <div class="enemy left">🧟</div>
-            <div class="enemy right">🧟</div>
-        </div>
-
-        <div class="features">
-            <div class="feature-item" style="--delay: 0s;">Dynamic Combat</div>
-            <div class="feature-item" style="--delay: 0.5s;">Challenging Enemies</div>
-            <div class="feature-item" style="--delay: 1s;">Realistic Camera</div>
-            <div class="feature-item" style="--delay: 1.5s;">Survival Horror</div>
-        </div>
-
-        <div class="tagline">
-            Survive. Fight. Save Humanity.
-        </div>
-
-        <div class="release-info">
-            Available Now • PC • Web • Unity 2D
-        </div>
+    <div class="title">
+      <h1>AGENT PHOENIX</h1>
+      <div class="subtitle">Genesis Outbreak</div>
     </div>
+
+    <!-- Scene -->
+    <div class="scene">
+      <div class="camera">📷</div>
+      <div class="player">🧍‍♂️</div>
+      <div class="bullet"></div>
+      <div class="enemy left">🧟</div>
+      <div class="enemy right">🧟</div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item" style="--delay: 0s;">Dynamic Combat</div>
+      <div class="feature-item" style="--delay: 0.5s;">Challenging Enemies</div>
+      <div class="feature-item" style="--delay: 1s;">Realistic Camera</div>
+      <div class="feature-item" style="--delay: 1.5s;">Survival Horror</div>
+    </div>
+
+    <div class="tagline">
+      Survive. Fight. Save Humanity.
+    </div>
+
+    <div class="story">
+      In 2024, a failed military experiment unleashed the Genesis compound.
+      As Agent Phoenix, fight your way to find the antidote before it's too late.
+    </div>
+
+    <div class="cta">
+      <a href="#" class="btn">▶ Watch Trailer</a>
+      <a href="#" class="btn">🎮 Play Now</a>
+    </div>
+
+    <div class="release-info">
+      Available Now • PC • Web • Unity 2D
+    </div>
+  </div>
 </body>
 </html>
