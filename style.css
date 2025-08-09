@@ -245,6 +245,7 @@ body {
 /* Lab background */
 .lab-bg {
     bottom: 0;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
