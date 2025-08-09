@@ -242,16 +242,7 @@ body {
     user-select: none;
 }
 
-/* Lab background */
-.lab-bg {
-    bottom: 0;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: auto;
-    position: absolute; z-index: 0;
-}
+
 
 .scene {
     position: absolute;
@@ -261,6 +252,16 @@ body {
     width: 450px;
     height: 350px;
     z-index: 5;
+}
+
+/* Lab background */
+.lab-bg {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    position: absolute; z-index: 0;
 }
 
 
