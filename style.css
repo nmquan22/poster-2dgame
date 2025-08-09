@@ -1,3 +1,4 @@
+/* Import font Google */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;600;800&display=swap');
 
 body {
@@ -17,9 +18,8 @@ body {
     background: linear-gradient(45deg, #1a1a1a, #2d4a2d, #1a1a1a);
     position: relative;
     border: 3px solid #00ff41;
-    box-shadow: 
-        0 0 50px rgba(0, 255, 65, 0.3),
-        inset 0 0 100px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 50px rgba(0, 255, 65, 0.3),
+                inset 0 0 100px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     animation: posterGlow 3s ease-in-out infinite alternate;
 }
@@ -35,10 +35,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 30% 20%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 70% 80%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
-        linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(45, 74, 45, 0.3) 50%, rgba(0, 0, 0, 0.9) 100%);
+    background: radial-gradient(circle at 30% 20%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(45, 74, 45, 0.3) 50%, rgba(0, 0, 0, 0.9) 100%);
 }
 
 .title {
@@ -56,10 +55,9 @@ body {
     font-weight: 900;
     color: #00ff41;
     margin: 0;
-    text-shadow: 
-        0 0 10px #00ff41,
-        0 0 20px #00ff41,
-        2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px #00ff41,
+                 0 0 20px #00ff41,
+                 2px 2px 4px rgba(0, 0, 0, 0.8);
     letter-spacing: 2px;
     animation: titleFlicker 2s ease-in-out infinite alternate;
 }
@@ -91,9 +89,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: 
-        radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%),
-        conic-gradient(from 0deg, #1a1a1a, #2d4a2d, #1a1a1a, #2d4a2d, #1a1a1a);
+    background: radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%),
+                conic-gradient(from 0deg, #1a1a1a, #2d4a2d, #1a1a1a, #2d4a2d, #1a1a1a);
     animation: heroRotate 10s linear infinite;
 }
 
