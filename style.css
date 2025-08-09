@@ -282,7 +282,7 @@ body {
     bottom: 90px;
     left: 42%;
     width: 40px; /* scale */
-    transform: rotate(20deg);
+    transform: rotate(135deg);
     animation: bulletMove 1s linear infinite;
 }
 @keyframes bulletMove {
