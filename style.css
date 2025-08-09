@@ -237,24 +237,27 @@ body {
   color: #00ff41;
   font-size: 12px;
 }
-/* Scene */
-.scene {
+.scene img {
     position: absolute;
-    top: 220px;
+    user-select: none;
+}
+
+/* Lab background */
+.lab-bg {
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 450px;
-    height: 300px;
-    z-index: 5;
+    width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
 /* Player */
 .player {
-    position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 50px;
+    width: 80px;
     animation: playerIdle 1.5s ease-in-out infinite alternate;
 }
 @keyframes playerIdle {
@@ -262,12 +265,11 @@ body {
     100% { transform: translateX(-50%) translateY(-5px); }
 }
 
-/* Bullet (angled) */
+/* Bullet */
 .bullet {
-    position: absolute;
     bottom: 140px;
     left: 53%;
-    font-size: 20px;
+    width: 20px;
     animation: bulletMove 1s linear infinite;
 }
 @keyframes bulletMove {
@@ -275,19 +277,18 @@ body {
     100% { transform: translate(200px,-60px) rotate(-20deg); opacity: 0; }
 }
 
-/* Enemies */
+/* Zombies */
 .enemy {
-    position: absolute;
     bottom: 100px;
-    font-size: 45px;
+    width: 70px;
     animation: enemyMove 3s linear infinite;
 }
 .enemy.left {
-    left: -60px;
+    left: -80px;
     animation-delay: 0s;
 }
 .enemy.right {
-    right: -60px;
+    right: -80px;
     animation-delay: 1.5s;
 }
 @keyframes enemyMove {
